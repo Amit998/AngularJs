@@ -1,0 +1,12 @@
+label {
+	width: 150px;
+}
+
+select, input {
+	width: 150px;
+	display: inline-table;
+}
+
+.is-invalid {
+	border: 1px solid red;
+}

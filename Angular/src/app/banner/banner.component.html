@@ -1,0 +1,32 @@
+ <section class="content">
+  <div class="row form-group">
+
+    <div class="col-md-9">
+    
+    </div>
+   <!--  <div class="col-md-3 text-right">
+      <button class="btn btn-success" routerLink="/bannerAdd">Add New 
+      </button>
+    </div> -->
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered" id="tasklist">
+      <tr class="default">
+        <th rowspan='2' class='text-center' style='vertical-align: middle'>_id</th><th rowspan='2' class='text-center' style='vertical-align: middle'>Banner Name</th><th rowspan='2' class='text-center' style='vertical-align: middle'>Order By</th>
+        <th colspan="2" class="text-center">Actions</th>
+      </tr>
+      <tr class="">
+        
+        <th>Edit</th>
+      </tr>
+      <tr *ngFor="let banner of bannerformrule">
+        <td>{{banner._id}}</td><td>{{banner.bannerName}}</td>
+        <td>{{banner.orderBy}}</td>
+        
+        <td class="text-center">
+          <button type="button" class="btn btn-block btn-default btn-xs" (click)="view(banner._id)">EDIT</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>

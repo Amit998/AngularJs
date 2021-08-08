@@ -1,0 +1,32 @@
+<div class="" [ngClass]="setClasses()">
+    <p>
+        <input (change)="onToggle(j)" type="checkbox">
+        {{j.StudentName}}
+        <button class="del" (click)="onDelete(j)" >x</button>
+        <button class="add" (click)="onShow(j)"  id="student">+</button>
+        <app-details (click)="onClick(j)" ></app-details>
+        
+    </p>
+    
+    
+</div>
+<div class="" *ngIf ="!isShow">
+    <div class="student">
+        <h1>{{title}}</h1>
+      <table class='table table-hover'>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Batch</th>
+        </tr>
+        <tr>
+          <td>{{StuName}}</td>
+          <td>{{stuId}}</td>
+          <td>{{StuBatch}}</td>
+        </tr>
+        
+      </table>
+
+      You clicked: {{StuName}}
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="">
+    <form  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <label for=""  >Name</label>
+    <input type="text" formControlName="title">
+
+    <div class="" *ngIf="submitted && f.title.errors" class="Invalid">
+        <div class="" *ngIf="f.title.errors.required" >Please Enter The Name</div>
+    </div>
+    
+    <hr>
+    <br>
+    <label for="">Email</label>
+    <input type="email" formControlName="email">
+    
+    
+    <div class="" *ngIf="submitted && f.email.errors" class="Invalid">
+        <div class="" *ngIf="f.email.errors.required" >Please Enter Email</div>
+    </div>
+    
+    
+    <hr>
+    <br>
+    <label for=""  >phoneNummber</label>
+    <input type="number" formControlName="phoneNummber">
+
+    <div class="" *ngIf="submitted && f.phoneNummber.errors" class="Invalid">
+        <div class="" *ngIf="f.phoneNummber.errors.required" >Enter The Phone Number</div>
+    </div>
+
+    <hr>
+    <br>
+    <label for="">password</label>
+    <input type="password" formControlName="password">
+
+    <div class="" *ngIf="submitted && f.password.errors" class="Invalid">
+        <div class="" *ngIf="f.password.errors.required" >Enter A Password</div>
+    </div>
+
+    <hr>
+    <br>
+    <label for="">Confirm password</label>
+    <input type="password" formControlName="ConfirmPassword">
+
+    <div class="" *ngIf="submitted && f.ConfirmPassword.errors" class="Invalid">
+        <div class="" *ngIf="f.ConfirmPassword.errors.required" >Please Enter The Valid Password</div>
+    </div>
+
+    <hr>
+    <br>
+    <Button (click)='newFunction2()'>Press</Button>
+    
+    </form>
+    <!-- <h1>{{myName}} </h1> -->
+</div>

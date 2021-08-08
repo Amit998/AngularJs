@@ -1,0 +1,26 @@
+<div class="">
+    <label for=""  >Name</label>
+    <input type="text" [formControl]="name">
+    <br>
+    <label for="">Email</label>
+    <input type="email" [formControl]="email">
+    <br>
+    <label for="">Pho</label>
+    <input type="number" [formControl]="number">
+    <br>
+    <Button (click)='newFunction()'>Press</Button>
+
+
+</div>
+<div class="">
+    <form  [formGroup]="profileForm">
+        <label for=""  >Name</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">Email</label>
+    <input type="email" formControlName="email">
+    <Button (click)='newFunction1()'>Press</Button>
+    
+    </form>
+    <!-- <h1>{{myName}} </h1> -->
+</div>

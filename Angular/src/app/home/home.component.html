@@ -1,0 +1,10 @@
+<div class="banner">
+	<img src="assets/jobready.png"/>
+</div>
+<li *ngFor="let hero of HEROES" (click)="onselect(hero)">
+	{{hero}}
+</li>
+
+<h4 *ngIf="selectedStudent">You selected: {{selectedStudent}}</h4>
+<h3>My name is: {{studentName | lowercase}}</h3>
+<input [(ngModel)]="studentName" placeholder="name"/>

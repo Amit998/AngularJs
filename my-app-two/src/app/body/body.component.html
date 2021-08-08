@@ -1,0 +1,35 @@
+<!-- <h1>Hello World</h1>
+<div class="">
+  <ul>
+    <li>AMit</li>
+    <li>AMit</li>
+    <li>AMit</li>
+  </ul>
+</div> -->
+<div class="container">
+  <button class="btn btn-danger postion" (click)="toggleShow()" >Click Me To Show Details</button>
+<div class="" *ngIf ="!isShow">
+    <div class="">
+        <h1>{{title}}</h1>
+      <table class='table table-hover'>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Batch</th>
+        </tr>
+        <tr *ngFor="let i of data">
+        <td>{{i.StudentId}}</td>
+        <td>{{i.StudentName}}</td>
+        <td>{{i.Batch}}</td>
+        </tr>
+        
+      </table>
+    </div>
+</div>
+</div>
+<app-each-student class="" 
+*ngFor = "let j of stuCollection" 
+[j]="j" 
+(deleteStudent)="deleteStudent($event)">
+  
+</app-each-student>

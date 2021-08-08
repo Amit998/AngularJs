@@ -1,0 +1,12 @@
+.btn-show {
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 5px 9px;
+    padding-right: 10px;
+    cursor: pointer;
+    float: right;
+    padding: 10dp;
+   
+    margin-right: 20px;
+  }
